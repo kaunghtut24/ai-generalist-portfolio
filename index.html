@@ -15,7 +15,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="app-icon.svg">
   <meta name="theme-color" content="#0A3D62">
@@ -30,9 +30,19 @@
       <nav id="primary-nav" class="nav" role="navigation" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#training">Training</a>
+        <a href="#blog">Blog</a>
+        <a href="#opensource">Open Source</a>
+        <a href="#speaking">Speaking</a>
         <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
       </nav>
     </div>
   </header>
@@ -40,27 +50,120 @@
   <main id="main" tabindex="-1">
     <section class="hero" aria-label="Intro">
       <div class="container">
-        <h2>AI Generalist • Educator • Practitioner</h2>
-        <p>Turning complex AI concepts into practical solutions. I build, teach, and guide — focusing on responsible and usable AI.</p>
-        <a href="#contact" class="btn-primary">Get in touch</a>
+        <h1 class="gradient-text">AI Generalist • Educator • Practitioner</h1>
+        <p class="typing">Turning complex AI concepts into practical solutions. I build, teach, and guide — focusing on responsible and usable AI.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-secondary">Get in Touch</a>
+        </div>
       </div>
     </section>
 
     <section id="about" class="about section" aria-labelledby="about-heading">
       <div class="container">
-        <h2 id="about-heading">About Me</h2>
-        <p><strong>[Your Name]</strong> is an AI generalist with experience across machine learning, data engineering, and model deployment. Passionate about hands-on learning and mentoring newcomers into AI careers.</p>
-        <blockquote>
-          <p>“I believe AI should be accessible, responsible, and continuously evolving.”</p>
-          <footer>— [Your Name]</footer>
-        </blockquote>
+        <div class="section-header">
+          <h2 id="about-heading">About Me</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+              <defs>
+                <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#0A3D62;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#00D4FF;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <rect width="200" height="200" rx="20" fill="url(#grad)"/>
+              <text x="100" y="120" font-family="Arial, sans-serif" font-size="60" font-weight="700" fill="white" text-anchor="middle">AI</text>
+            </svg>
+          </div>
+          <div class="about-text">
+            <h3>Building the Future of AI</h3>
+            <p><strong>[Your Name]</strong> is an AI generalist with experience across machine learning, data engineering, and model deployment. Passionate about hands-on learning and mentoring newcomers into AI careers.</p>
+            <p>With a focus on making AI accessible and practical, I help organizations implement responsible AI solutions while educating the next generation of AI practitioners.</p>
+            <div class="skills">
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Deep Learning</span>
+              <span class="skill-tag">NLP</span>
+              <span class="skill-tag">Computer Vision</span>
+              <span class="skill-tag">MLOps</span>
+              <span class="skill-tag">Data Engineering</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">PyTorch</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="projects section" aria-labelledby="projects-heading">
       <div class="container">
-        <h2 id="projects-heading">Selected Projects</h2>
+        <div class="section-header">
+          <h2 id="projects-heading">Selected Projects</h2>
+          <p>Real-world applications of AI solving complex problems</p>
+        </div>
         <div id="projects-grid" class="grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="blog" class="blog section" aria-labelledby="blog-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="blog-heading">Latest Insights</h2>
+          <p>Thoughts on AI, machine learning, and technology</p>
+        </div>
+        <div id="blog-grid" class="grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="opensource" class="opensource section" aria-labelledby="opensource-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="opensource-heading">Open Source</h2>
+          <p>Contributions to the AI community</p>
+        </div>
+        <div id="opensource-grid" class="grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="speaking" class="speaking section" aria-labelledby="speaking-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="speaking-heading">Speaking & Talks</h2>
+          <p>Sharing knowledge at conferences and meetups</p>
+        </div>
+        <div id="speaking-list" class="grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="tools" class="tools section" aria-labelledby="tools-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="tools-heading">AI Tools & Demos</h2>
+          <p>Interactive demonstrations and utilities</p>
+        </div>
+        <div id="tools-grid" class="grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="testimonials-heading">What People Say</h2>
+          <p>Testimonials from colleagues and students</p>
+        </div>
+        <div id="testimonials-grid" class="grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="newsletter section" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <h2 id="newsletter-heading">Stay Updated</h2>
+        <p>Get the latest insights on AI and machine learning delivered to your inbox. Join 500+ subscribers.</p>
+        <form class="newsletter-form" action="https://formspree.io/f/yourFormId" method="POST">
+          <input type="email" name="email" placeholder="Your email address" required />
+          <button type="submit" class="btn-secondary">Subscribe</button>
+        </form>
       </div>
     </section>
 
