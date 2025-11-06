@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init)",
+      "Bash(git commit -m \"Initial commit: AI Generalist portfolio template\n\n- Modern, accessible HTML structure\n- Mobile-first responsive CSS with custom properties\n- Vanilla JavaScript with dynamic content rendering\n- Image error handling for better UX\n- Content Security Policy for security\n- Git version control setup\")",
+      "Bash(git add .)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

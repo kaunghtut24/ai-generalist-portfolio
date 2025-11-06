@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI Generalist Portfolio — [Your Name]</title>
+  <meta name="description" content="Portfolio of [Your Name], AI Generalist — projects, certifications, and coaching services." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://i.imgur.com https://fonts.gstatic.com; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self' https://formspree.io;">
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Generalist Portfolio — [Your Name]" />
+  <meta property="og:description" content="AI projects, certifications, and training from [Your Name]." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="logo"><a href="#" aria-label="[Your Name] homepage">[Your Name]</a></h1>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">☰</button>
+      <nav id="primary-nav" class="nav" role="navigation" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#training">Training</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-label="Intro">
+      <div class="container">
+        <h2>AI Generalist • Educator • Practitioner</h2>
+        <p>Turning complex AI concepts into practical solutions. I build, teach, and guide — focusing on responsible and usable AI.</p>
+        <a href="#contact" class="btn-primary">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="about section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About Me</h2>
+        <p><strong>[Your Name]</strong> is an AI generalist with experience across machine learning, data engineering, and model deployment. Passionate about hands-on learning and mentoring newcomers into AI careers.</p>
+        <blockquote>
+          <p>“I believe AI should be accessible, responsible, and continuously evolving.”</p>
+          <footer>— [Your Name]</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">Selected Projects</h2>
+        <div id="projects-grid" class="grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="certifications" class="certifications section" aria-labelledby="certs-heading">
+      <div class="container">
+        <h2 id="certs-heading">Certifications</h2>
+        <ul id="cert-list" class="badge-list"></ul>
+      </div>
+    </section>
+
+    <section id="training" class="training section" aria-labelledby="training-heading">
+      <div class="container">
+        <h2 id="training-heading">Training & Coaching</h2>
+        <p>I offer workshops and one-on-one coaching on:</p>
+        <ul class="topics" id="topics-list">
+          <li>Fundamentals of Machine Learning</li>
+          <li>Prompt Engineering & LLMs</li>
+          <li>Responsible AI & Ethics</li>
+          <li>Data Pipeline Design</li>
+          <li>Career guidance for AI professionals</li>
+        </ul>
+        <a href="#contact" class="btn-outline">Book a session</a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact</h2>
+        <p>Ready to collaborate? Send a short message or connect on LinkedIn.</p>
+
+        <form class="contact-form" action="https://formspree.io/f/yourFormId" method="POST" aria-label="Contact form">
+          <label>
+            <span class="label-text">Name</span>
+            <input type="text" name="name" required placeholder="Your full name" />
+          </label>
+          <label>
+            <span class="label-text">Email</span>
+            <input type="email" name="_replyto" required placeholder="you@example.com" />
+          </label>
+          <label>
+            <span class="label-text">Message</span>
+            <textarea name="message" rows="5" required placeholder="How can I help?"></textarea>
+          </label>
+          <button type="submit" class="btn-primary">Send message</button>
+        </form>
+
+        <div class="social">
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a> |
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a> |
+          <a href="mailto:you@example.com">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 <a href="#">[Your Name]</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

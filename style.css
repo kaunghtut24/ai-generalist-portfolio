@@ -1,0 +1,75 @@
+/* Refined stylesheet - mobile-first, accessible, modern */
+:root{
+  --clr-primary:#0A3D62;
+  --clr-accent:#1ABC9C;
+  --clr-dark:#2C3E50;
+  --clr-light:#ECF0F1;
+  --clr-info:#3498DB;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+  --radius: 8px;
+  --container-w: 1100px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);line-height:1.5;color:var(--clr-dark);background:var(--clr-light);-webkit-font-smoothing:antialiased}
+.container{width:90%;max-width:var(--container-w);margin:0 auto;padding:1rem 0}
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;color:#fff;padding:.5rem;border-radius:4px}
+
+/* Header */
+.site-header{background:var(--clr-primary);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo a{color:#fff;text-decoration:none;font-weight:700;font-family:var(--font-heading);font-size:1.25rem}
+#nav-toggle{display:none;background:transparent;border:0;color:#fff;font-size:1.5rem;padding:.25rem 0}
+.nav{display:flex;gap:1rem;align-items:center}
+.nav a{color:#fff;text-decoration:none;padding:.35rem .5rem;border-radius:6px;font-weight:600}
+.nav a:focus{outline:3px solid rgba(255,255,255,.12)}
+.nav a:hover{background:rgba(255,255,255,.06);color:var(--clr-accent)}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--clr-primary),var(--clr-accent));color:#fff;padding:3.5rem 0;text-align:center}
+.hero h2{font-family:var(--font-heading);font-size:1.6rem;margin-bottom:.5rem}
+.hero p{margin-bottom:1rem;opacity:.95}
+.btn-primary{display:inline-block;background:var(--clr-accent);color:#fff;padding:.65rem 1rem;border-radius:6px;text-decoration:none;font-weight:700}
+.btn-primary:focus{outline:3px solid rgba(0,0,0,.12)}
+.btn-outline{display:inline-block;border:2px solid var(--clr-primary);padding:.45rem .8rem;border-radius:6px;text-decoration:none;color:var(--clr-primary);font-weight:700}
+
+/* Sections */
+.section{padding:2rem 0;background:#fff}
+.about{background:var(--clr-light)}
+.container h2{font-family:var(--font-heading);margin-bottom:.75rem;font-size:1.25rem}
+blockquote{font-style:italic;border-left:4px solid var(--clr-accent);padding-left:.75rem;margin:1rem 0;background:rgba(26,188,156,.03);border-radius:6px;padding:.75rem}
+
+/* Grid & cards */
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#fff;border:1px solid #e6e6e6;padding:1rem;border-radius:6px;box-shadow:0 6px 18px rgba(16,24,40,.03)}
+.card h3{margin-bottom:.5rem;font-size:1rem}
+.link{color:var(--clr-primary);text-decoration:none;font-weight:600}
+.link:hover{color:var(--clr-accent)}
+
+/* badges */
+.badge-list{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0}
+.badge{display:flex;align-items:center;gap:.5rem;background:var(--clr-light);padding:.4rem .6rem;border-radius:6px;border:1px solid #eaeaea}
+.badge img{width:28px;height:28px;object-fit:cover}
+
+/* contact form */
+.contact-form{display:flex;flex-direction:column;gap:.75rem;max-width:540px}
+.contact-form label{display:flex;flex-direction:column;font-weight:600}
+.contact-form input,.contact-form textarea{padding:.5rem;border:1px solid #cfcfcf;border-radius:6px;font-family:var(--font-body)}
+.contact-form button{background:var(--clr-primary);color:#fff;padding:.6rem .9rem;border-radius:6px;border:0;font-weight:700}
+
+/* footer */
+.site-footer{background:var(--clr-dark);color:#fff;text-align:center;padding:1rem 0;margin-top:1.5rem}
+.site-footer a{color:var(--clr-accent);text-decoration:none}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero h2{font-size:1.4rem}
+}
+@media (max-width:700px){
+  #nav-toggle{display:block}
+  .nav{position:absolute;right:1rem;top:64px;background:var(--clr-primary);flex-direction:column;padding:.5rem;border-radius:6px;display:none;min-width:180px}
+  .nav.show{display:flex}
+  .nav a{padding:.6rem 1rem}
+}
