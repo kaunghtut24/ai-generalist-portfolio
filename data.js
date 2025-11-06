@@ -1,164 +1,276 @@
-// Comprehensive site data for modern AI portfolio
+// ========================================
+// 🎨 CUSTOMIZATION GUIDE
+// ========================================
+// Replace all placeholder values below with your actual information
+// - Change "yourusername" to your GitHub username
+// - Replace "[Your Name]" with your name (in index.html)
+// - Update "yourprofile" to your LinkedIn slug
+// - Replace "you@example.com" with your email
+// - Add your real project links, blog posts, and social profiles
+// - Delete any sections you don't want to display
+//
+// 📖 For detailed instructions, see README.md
+//
+
 window.SITE_DATA = {
   "projects": [
     {
-      "title": "AI-Chatbot for Customer Support",
-      "description": "A lightweight transformer-based chatbot built with Hugging Face and Flask. Deployed on Heroku with 99.9% uptime.",
-      "github": "https://github.com/yourusername/ai-chatbot",
-      "demo": "https://demo-chatbot.example.com",
-      "tech": ["Python", "Transformers", "Flask", "Heroku"],
-      "stars": 432
+      // TODO: Replace with your real project name
+      "title": "Your Project Name Here",
+      // TODO: Describe what your project does (2-3 sentences)
+      "description": "Explain what your project does, what problem it solves, and what technologies you used. Keep it concise and engaging.",
+      // TODO: Replace with your GitHub repository URL
+      "github": "https://github.com/yourusername/your-repo-name",
+      // TODO: Add a live demo link (optional, can be empty string "")
+      "demo": "https://your-demo-link.com",
+      // TODO: List the technologies/frameworks used
+      "tech": ["Python", "TensorFlow", "React", "AWS"],
+      // TODO: Add GitHub star count (optional, can be 0)
+      "stars": 150
     },
     {
-      "title": "Image-Style Transfer Demo",
-      "description": "Explores neural style transfer using PyTorch, with an interactive Streamlit UI. Processed over 10,000 images.",
-      "github": "https://github.com/yourusername/style-transfer",
-      "demo": "https://style-transfer.example.com",
-      "tech": ["PyTorch", "Streamlit", "OpenCV"],
-      "stars": 287
+      "title": "Another Awesome Project",
+      "description": "Describe your second project. What makes it special? What impact did it have?",
+      "github": "https://github.com/yourusername/another-repo",
+      "demo": "https://live-demo-link.com",
+      "tech": ["PyTorch", "FastAPI", "PostgreSQL"],
+      "stars": 89
     },
     {
-      "title": "MLOps Pipeline Automation",
-      "description": "End-to-end ML pipeline using Kubeflow, Docker, and Kubernetes. Automated model training and deployment.",
-      "github": "https://github.com/yourusername/mlops-pipeline",
-      "demo": "https://ml-pipeline.example.com",
-      "tech": ["Kubeflow", "Docker", "Kubernetes", "MLflow"],
-      "stars": 156
+      "title": "Third Project Example",
+      "description": "You can add more projects or delete this one. Each project should showcase different skills.",
+      "github": "https://github.com/yourusername/third-project",
+      "demo": "https://third-demo.com",
+      "tech": ["JavaScript", "Node.js", "MongoDB"],
+      "stars": 45
     }
+    // Add more projects by copying the structure above
   ],
+
   "blog": [
     {
-      "title": "The Future of Large Language Models in 2025",
-      "excerpt": "Exploring the latest developments in LLMs and their impact on various industries.",
-      "date": "2024-12-15",
+      // TODO: Add your blog post title
+      "title": "Your Blog Post Title",
+      // TODO: Write a brief excerpt (1-2 sentences)
+      "excerpt": "Write a short summary of what readers will learn from this article.",
+      // TODO: Use format YYYY-MM-DD
+      "date": "2025-01-15",
+      // TODO: Estimate reading time (e.g., "5 min read")
       "readTime": "8 min read",
-      "link": "#"
+      // TODO: Link to your full blog post
+      "link": "https://yourblog.com/post-url"
     },
     {
-      "title": "Building Production-Ready AI Systems",
-      "excerpt": "Best practices for deploying and maintaining machine learning models in production environments.",
-      "date": "2024-11-28",
-      "readTime": "12 min read",
-      "link": "#"
+      "title": "Another Insightful Article",
+      "excerpt": "Summarize the key takeaways from this post.",
+      "date": "2024-12-20",
+      "readTime": "6 min read",
+      "link": "https://medium.com/@yourusername/article-2"
     },
     {
-      "title": "Ethics in AI: A Practical Guide",
-      "excerpt": "How to implement responsible AI practices in your organization and projects.",
-      "date": "2024-10-20",
+      "title": "AI Trends and Predictions",
+      "excerpt": "Share your thoughts on where AI is heading.",
+      "date": "2024-11-30",
       "readTime": "10 min read",
-      "link": "#"
+      "link": "https://dev.to/@yourusername/ai-trends"
     }
+    // Add more blog posts as needed
   ],
+
   "opensource": [
     {
-      "name": "ai-utils",
-      "description": "Collection of utilities for AI/ML workflows including data preprocessing, model evaluation, and visualization tools.",
-      "github": "https://github.com/yourusername/ai-utils",
-      "stars": 892,
+      // TODO: Your repository name
+      "name": "your-repository-name",
+      // TODO: What does this repo do?
+      "description": "Briefly describe what this open source project does and why it's useful.",
+      // TODO: Full GitHub URL
+      "github": "https://github.com/yourusername/your-repository-name",
+      // TODO: Current star count
+      "stars": 256,
+      // TODO: Programming language (e.g., Python, JavaScript, TypeScript)
       "language": "Python",
-      "forks": 234
+      // TODO: Number of forks
+      "forks": 42
     },
     {
-      "name": "ml-dashboard",
-      "description": "Real-time monitoring dashboard for machine learning models with metrics tracking and alerting.",
-      "github": "https://github.com/yourusername/ml-dashboard",
-      "stars": 543,
+      "name": "another-oss-project",
+      "description": "This project helps with X, Y, and Z. Great for developers building AI applications.",
+      "github": "https://github.com/yourusername/another-oss-project",
+      "stars": 178,
       "language": "TypeScript",
-      "forks": 123
+      "forks": 23
     },
     {
-      "name": "prompt-engineering-guide",
-      "description": "Comprehensive guide and best practices for prompt engineering with LLMs.",
-      "github": "https://github.com/yourusername/prompt-engineering-guide",
-      "stars": 1200,
+      "name": "community-resource",
+      "description": "A collection of resources, tutorials, or tools for the AI community.",
+      "github": "https://github.com/yourusername/community-resource",
+      "stars": 534,
       "language": "Documentation",
-      "forks": 456
+      "forks": 89
     }
+    // Showcase your best open source contributions
   ],
+
   "speaking": [
     {
-      "title": "Demystifying Transformer Architectures",
-      "event": "AI Summit 2024",
+      // TODO: Your talk title
+      "title": "Your Talk Title Here",
+      // TODO: Conference or event name
+      "event": "AI Conference 2025",
+      // TODO: Location (City, Country)
       "location": "San Francisco, CA",
-      "date": "2024-09-15",
-      "video": "#"
+      // TODO: Event date (YYYY-MM-DD)
+      "date": "2025-03-15",
+      // TODO: Link to video recording (optional, can be "")
+      "video": "https://youtube.com/watch?v=...",
+      // TODO: Link to slides (optional, can be "")
+      "slides": "https://slideshare.net/..."
     },
     {
-      "title": "From Notebook to Production: MLOps in Practice",
-      "event": "ML Conference",
-      "location": "Berlin, Germany",
-      "date": "2024-07-22",
-      "slides": "#"
-    },
-    {
-      "title": "Ethics and Bias in Machine Learning",
-      "event": "Tech Ethics Meetup",
+      "title": "Machine Learning Best Practices",
+      "event": "Tech Meetup",
       "location": "New York, NY",
-      "date": "2024-05-10",
-      "slides": "#"
+      "date": "2024-11-20",
+      "video": "https://vimeo.com/...",
+      "slides": "https://speakerdeck.com/..."
+    },
+    {
+      "title": "The Future of AI Ethics",
+      "event": "University Guest Lecture",
+      "location": "Boston, MA",
+      "date": "2024-09-10",
+      "video": "",
+      "slides": "https://docs.google.com/..."
     }
+    // Add more speaking engagements
   ],
+
   "tools": [
     {
-      "name": "AI Model Comparator",
-      "description": "Compare multiple AI models side-by-side with performance metrics and cost analysis.",
+      // TODO: Tool or demo name
+      "name": "Your AI Tool Name",
+      // TODO: What does it do?
+      "description": "Describe what this tool does and how visitors can use it.",
+      // TODO: Icon type: "chart", "edit", or "tag"
       "icon": "chart",
-      "demo": "#"
+      // TODO: Link to live demo
+      "demo": "https://your-tool-demo.com"
     },
     {
-      "name": "Prompt Optimizer",
-      "description": "Optimize and test prompts for LLMs with A/B testing capabilities.",
+      "name": "Model Performance Tracker",
+      "description": "Track and visualize your ML model performance over time.",
+      "icon": "chart",
+      "demo": "https://demo-model-tracker.com"
+    },
+    {
+      "name": "Data Preprocessing Tool",
+      "description": "Clean and prepare your dataset with this interactive tool.",
       "icon": "edit",
-      "demo": "#"
-    },
-    {
-      "name": "Data Labeling Assistant",
-      "description": "AI-powered tool to assist with data labeling and annotation tasks.",
-      "icon": "tag",
-      "demo": "#"
+      "demo": "https://data-prep-tool.com"
     }
+    // Add your interactive tools and demos
   ],
+
   "testimonials": [
     {
-      "quote": "[Your Name] has an exceptional ability to make complex AI concepts accessible to everyone. Their teaching style is both engaging and effective.",
+      // TODO: What did they say about you?
+      "quote": "Replace this with a testimonial from a colleague, client, or student. Keep it authentic and specific.",
+      // TODO: Person's full name
       "author": "Dr. Jane Smith",
-      "title": "AI Research Director",
-      "image": "https://i.imgur.com/placeholder.png"
+      // TODO: Their job title and company
+      "title": "AI Research Director, Tech Company",
+      // TODO: Photo URL (optional, can be "")
+      "image": "https://i.imgur.com/placeholder-photo.jpg"
     },
     {
-      "quote": "Working with [Your Name] on our ML pipeline was transformative. The automation they built saved us countless hours.",
+      "quote": "Another great testimonial highlighting your skills and impact.",
       "author": "John Doe",
-      "title": "CTO, Tech Corp",
-      "image": "https://i.imgur.com/placeholder.png"
+      "title": "CTO, StartupXYZ",
+      "image": "https://i.imgur.com/placeholder-2.jpg"
     },
     {
-      "quote": "Their insights on responsible AI implementation were invaluable for our team. Highly recommended!",
+      "quote": "A third testimonial from someone who has worked with you.",
       "author": "Sarah Johnson",
-      "title": "ML Engineer",
-      "image": "https://i.imgur.com/placeholder.png"
+      "title": "Senior ML Engineer, AI Corp",
+      "image": ""
     }
+    // Add more testimonials (3-5 is good)
   ],
+
   "certifications": [
     {
-      "name": "Coursera – AI Specialization",
-      "badgeImg": "https://i.imgur.com/7Qk8b7f.png",
-      "link": "https://www.coursera.org/verify/your-certificate-id"
+      // TODO: Full certification name
+      "name": "Certification Name - Issuing Organization",
+      // TODO: Badge image URL (from the organization's verification page)
+      "badgeImg": "https://i.imgur.com/your-badge-image.png",
+      // TODO: Verification link (from the org's verify page)
+      "link": "https://www.organization.com/verify/your-certificate-id"
     },
     {
-      "name": "DeepLearning.AI – TensorFlow Developer",
-      "badgeImg": "https://i.imgur.com/9r3xU1G.png",
-      "link": "https://www.deeplearning.ai/certificates/your-certificate-id"
+      "name": "Another Professional Certification",
+      "badgeImg": "https://i.imgur.com/certification-badge.png",
+      "link": "https://verify.cert-provider.com/ID123"
     },
     {
-      "name": "AWS – Machine Learning Specialty",
-      "badgeImg": "https://i.imgur.com/placeholder.png",
-      "link": "#"
+      "name": "Course Completion Certificate",
+      "badgeImg": "https://i.imgur.com/course-cert.png",
+      "link": "https://coursera.org/verify/ABC123"
     }
+    // Add all your relevant certifications
   ],
+
   "social": {
+    // TODO: Your GitHub profile URL
     "github": "https://github.com/yourusername",
+    // TODO: Your LinkedIn profile (use full URL)
     "linkedin": "https://linkedin.com/in/yourprofile",
+    // TODO: Your Twitter/X handle (optional)
     "twitter": "https://twitter.com/yourusername",
+    // TODO: Your email address
     "email": "you@example.com"
   }
 };
+
+//
+// 💡 TIPS FOR CUSTOMIZATION:
+//
+// 1. PROJECTS: Showcase 3-6 of your best projects
+//    - Include a good mix of different technologies
+//    - Add both personal and professional work
+//    - Include live demos when possible
+//
+// 2. BLOG: Share your latest 3-6 articles
+//    - Mix technical tutorials with thought leadership
+//    - Link to Medium, Dev.to, personal blog, etc.
+//
+// 3. OPEN SOURCE: Highlight contributions you care about
+//    - Include your own repos and significant contributions
+//    - Update star counts periodically
+//
+// 4. SPEAKING: List recent talks and presentations
+//    - Include both past and upcoming events
+//    - Add video links when available
+//
+// 5. TOOLS: Showcase interactive demos or useful utilities
+//    - These should be things visitors can actually use
+//    - Great conversation starters
+//
+// 6. TESTIMONIALS: Get real quotes from real people
+//    - Ask colleagues, clients, students for reviews
+//    - Specific examples are better than generic praise
+//
+// 7. SOCIAL LINKS: Only include profiles you actively use
+//    - Keep them updated
+//    - Consider adding more: YouTube, Medium, personal blog
+//
+// 8. DELETING SECTIONS: If you don't want a section, either:
+//    - Delete the array items (leave empty [] to hide section)
+//    - Or remove the entire array key
+//
+// 9. TESTING: After updating, open index.html in your browser
+//    - Check that all links work
+//    - Test on mobile and desktop
+//    - Verify dark/light mode toggle
+//
+// 10. DEPLOYMENT: See DEPLOYMENT.md for hosting options
+//
