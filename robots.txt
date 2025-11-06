@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Don't index admin or private pages
+Disallow: /admin/
+Disallow: /private/
