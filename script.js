@@ -14,14 +14,14 @@
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
 
-    // Apply theme
-    document.documentElement.setAttribute('data-theme', initialTheme);
+    // Apply theme to body
+    document.body.setAttribute('data-theme', initialTheme);
     updateThemeIcon(initialTheme);
 
     themeToggle?.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const currentTheme = document.body.getAttribute('data-theme');
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
+      document.body.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
       updateThemeIcon(newTheme);
     });
